@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    int num;
+    scanf("%d", &num);
+    num = num % 100;
+    int tens = num / 10;
+    int ones = num % 10;
+    int swapped = ones * 10 + tens;
+    printf("%d", swapped);
+    return 0;
+}
